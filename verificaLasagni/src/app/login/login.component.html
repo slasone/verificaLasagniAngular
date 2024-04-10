@@ -1,0 +1,30 @@
+<h1>Registration</h1>
+
+<label>Username:</label>
+<input type="text" [(ngModel)] = "registration.username" required><br><br>
+
+<label>Password:</label>
+<input type="text" [(ngModel)] = "registration.password" required><br><br>
+
+<p>{{rispostaRegistration}}</p>
+<button (click) = newRegistration()>Registration</button>
+
+{{registration | json}}
+
+
+<hr>
+
+
+<h1>Login</h1>
+
+<label>Username:</label>
+<input type="text" [(ngModel)] = "login.username" required><br><br>
+
+<label>Password:</label>
+<input type="text" [(ngModel)] = "login.password" required><br><br>
+
+<p>{{rispostaLogin}}</p>
+<button (click) = newLogin()>Login</button>
+
+{{login | json}}
+
